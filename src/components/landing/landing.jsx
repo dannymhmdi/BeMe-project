@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import Images from './images'
+import Images from "./images";
 const Landing = () => {
   return (
     <>
@@ -25,9 +25,16 @@ const Landing = () => {
       </div>
       <div className="text-center py-12 border">
         {" "}
-        <p><Link href={"./home"} className="text-base font-bold md:text-2xl p-4 md:p-3 border border-solid border-teal-400 rounded-full bg-teal-400">راهنماتو انتخاب کن</Link></p>
+        <p>
+          <Link
+            href={"./home"}
+            className="text-base font-bold md:text-2xl p-4 md:p-3 borders border-solid border-teal-400 rounded-full bg-teal-400 transition duration-200 ease-out hover:ease-in hover:bg-teal-300"
+          >
+            راهنماتو انتخاب کن
+          </Link>
+        </p>
       </div>
-      <Images/>
+      <Images />
     </>
   );
 };
