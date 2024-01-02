@@ -3,7 +3,7 @@ import React from "react";
 
 const BasePage = ({ children, title, fluid, fixed }) => {
   return (
-    <Container maxWidth={fluid} fixed={fixed} className="border" style={{border:'3px solid'}}>
+    <Container maxWidth={fluid} fixed={fixed} >
       {/* <Helmet>
         <title>{title}</title>
       </Helmet> */}
