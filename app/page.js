@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
       <LandingLayout>   
-        <BasePage fluid={'false'}>
-            <Landing/>
+        <BasePage fixed={true}>
+            <Landing/> 
         </BasePage>
       </LandingLayout>
     </>
