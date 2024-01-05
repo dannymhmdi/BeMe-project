@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <>
       <LandingLayout>   
-        <BasePage fixed={true}>
+        {/* <BasePage fixed={true}> */}
             <Landing/> 
-        </BasePage>
+        {/* </BasePage> */}
       </LandingLayout>
     </>
   );
