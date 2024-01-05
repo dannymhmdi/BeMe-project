@@ -65,7 +65,6 @@ function Header() {
           </Menu>
         </Box>
 
-        <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
 
         <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
           {pages.map((page) => (
@@ -79,7 +78,7 @@ function Header() {
           ))}
         </Box>
         
-        <Image src="@/src/assets/images/BeMe-logo.svg" alt="Logo" width={'20'} height={'20'} />
+        <Image src="public/images/BeMe-logo.svg" alt="Logo" width={'20'} height={'20'} />
       </Toolbar>
     </AppBar>
   );
