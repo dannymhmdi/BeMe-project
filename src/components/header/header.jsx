@@ -9,6 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import Image from "next/image";
 
 const pages = [
   "ورود",
@@ -77,7 +78,8 @@ function Header() {
             </Button>
           ))}
         </Box>
-        <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+        
+        <Image src="@/src/assets/images/BeMe-logo.svg" alt="Logo" width={'20'} height={'20'} />
       </Toolbar>
     </AppBar>
   );

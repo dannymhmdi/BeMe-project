@@ -12,7 +12,7 @@ const vazirFont = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="rtl">
-      <body className={vazirFont.className}>{children}</body>
+      <body className={`${vazirFont.className} `}>{children}</body>
     </html>
   );
 }

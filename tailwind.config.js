@@ -31,6 +31,7 @@ module.exports = {
       "white": "#fff",
       "light-blue": "#3A63A8",
       "dark-blue": "#191E29",
+      "rgba":"rgba(228, 246, 228, 0.3)"
     },
   },
   plugins: [],
