@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Images from "./images";
-import { ExprienceSection, LandigPart2 } from ".";
+import { ExprienceSection, LandigPart2, PolicySection } from ".";
 import { BasePage } from "../base-page";
 const Landing = () => {
   return (
@@ -43,6 +43,7 @@ const Landing = () => {
         </>
       </BasePage>
       <ExprienceSection />
+      <PolicySection/>
     </>
   );
 };
