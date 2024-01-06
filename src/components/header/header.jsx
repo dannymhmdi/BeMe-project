@@ -10,6 +10,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import Image from "next/image";
+import logo from "@/public/images/logo.svg";
 
 const pages = [
   "ورود",
@@ -25,9 +26,8 @@ function Header() {
   const handleCloseNavMenu = () => setAnchorElNav(null);
   const handleOpenNavMenu = (event) => setAnchorElNav(event.currentTarget);
 
-  
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ bgcolor: "#173A5E" }}>
       <Toolbar>
         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
           <IconButton
@@ -66,7 +66,6 @@ function Header() {
           </Menu>
         </Box>
 
-
         <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
           {pages.map((page) => (
             <Button
@@ -78,8 +77,7 @@ function Header() {
             </Button>
           ))}
         </Box>
-        
-        <Image src="public/images/BeMe-logo.svg" alt="Logo" width={'20'} height={'20'} />
+        <Image src={logo} alt="logo" width={45} height={45} quality={100} onLoad={(e) => console.log('hi')} />
       </Toolbar>
     </AppBar>
   );
