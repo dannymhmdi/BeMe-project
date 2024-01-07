@@ -27,7 +27,7 @@ function Header() {
   const handleOpenNavMenu = (event) => setAnchorElNav(event.currentTarget);
 
   return (
-    <AppBar position="static" sx={{ bgcolor: "#173A5E" }}>
+    <AppBar position="static" className="bg-white">
       <Toolbar>
         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
           <IconButton
@@ -71,7 +71,8 @@ function Header() {
             <Button
               key={page}
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: "white", display: "block" }}
+              sx={{ my: 2, display: "block" }}
+              className="text-dark text-lg"
             >
               {page}
             </Button>
