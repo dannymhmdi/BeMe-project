@@ -27,7 +27,7 @@ function Header() {
   const handleOpenNavMenu = (event) => setAnchorElNav(event.currentTarget);
 
   return (
-    <AppBar position="static" className="bg-white">
+    <AppBar position="static" className="bg-white shadow-none">
       <Toolbar>
         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
           <IconButton
