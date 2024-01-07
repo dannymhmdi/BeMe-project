@@ -43,7 +43,7 @@ const Landing = () => {
         </>
       </BasePage>
       <ExprienceSection />
-      <PolicySection/>
+      <PolicySection />
     </>
   );
 };
